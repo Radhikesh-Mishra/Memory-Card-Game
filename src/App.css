@@ -1,0 +1,67 @@
+.AppContainer {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 20px auto;
+  row-gap: 10px;
+}
+
+.hide {
+  visibility: hidden;
+  width: 60px;
+  height: 60px;
+  border: 2px solid transparent;
+  background-color: transparent;
+}
+
+.flip, .card {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flip {
+  background-color: black;
+  color: black;
+}
+
+.card {
+  background-color: white;
+  color: black;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
